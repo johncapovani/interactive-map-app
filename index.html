@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS Start -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+
+    <!-- Leaflet CSS End -->
+
+    <script src="app.js" defer></script>
+
+    <!-- Leaflet Javascript Start (-Placed After CSS per Documentation-) -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <!-- Leaflet Javascript End (-Placed After CSS per Documentation-) -->
+
+
+    <!-- Dev CSS Link Start -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS Link End -->
+
+
+
+
+
+    <title>Interactive Map Project</title>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <a href="#default" class="logo">Mapifi - Where data helps lead the way!</a>
+        <div class="header-right">
+            <a class="active" href="#home">Search Locations Near You</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+
+
+    <form>
+        <label for="country">Find locations close by using the search below:</label>
+        <input type="text" id="searchbar" name="search" placeholder="Search...">
+        <label for="country">Location Category</label>
+        <select id="business">
+            <option value="" disabled selected hidden>Choose a location category</option>
+            <option value="restaurant">Restaurants</option>
+            <option value="coffee">Coffee Shops</option>
+            <option value="hotel">Hotels</option>
+            <option value="market">Markets</option>
+        </select>
+        <button id="submit">Submit</button>
+
+    </form>
+
+
+
+    <div id="map"></div>
+
+
+</body>
+
+</html>
